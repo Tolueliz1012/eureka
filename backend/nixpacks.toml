@@ -1,0 +1,5 @@
+[phases.install]
+cmds = ["pip install fastapi uvicorn anthropic supabase python-dotenv"]
+
+[start]
+cmd = "python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
