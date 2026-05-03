@@ -75,10 +75,10 @@ function QuizCard({ quiz, topic, onDone }) {
 
 const css = `
   .chat-root{background:#0F0F13;min-height:100vh;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
-  .chat-header{background:#18181F;border-bottom:1px solid rgba(255,255,255,0.06);padding:16px 28px;flex-shrink:0}
+  .chat-header{background:#18181F;border-bottom:1px solid rgba(255,255,255,0.06);padding:12px 16px;flex-shrink:0}
   .progress-track{background:rgba(255,255,255,0.07);border-radius:100px;height:4px;margin-top:8px}
   .progress-fill{height:4px;border-radius:100px;background:#7C3AED;transition:width 0.6s ease}
-  .chat-body{flex:1;overflow-y:auto;padding:28px;display:flex;flex-direction:column;gap:16px}
+  .chat-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
   .chat-body::-webkit-scrollbar{width:4px}
   .chat-body::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:10px}
   .msg-row-ai{display:flex;align-items:flex-start;gap:12px}
@@ -89,7 +89,7 @@ const css = `
   .dot{width:7px;height:7px;border-radius:50%;background:#6B6875;animation:bounce 1.2s infinite;display:inline-block;margin:0 2px}
   .dot:nth-child(2){animation-delay:0.2s}.dot:nth-child(3){animation-delay:0.4s}
   @keyframes bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
-  .chat-footer{background:#18181F;border-top:1px solid rgba(255,255,255,0.06);padding:16px 28px;display:flex;gap:12px;flex-shrink:0}
+  .chat-footer{background:#18181F;border-top:1px solid rgba(255,255,255,0.06);padding:12px 16px;display:flex;gap:8px;flex-shrink:0}
   .chat-input{flex:1;background:#0F0F13;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:13px 18px;color:#F5F3EE;font-size:15px;font-family:system-ui,sans-serif;outline:none}
   .chat-input::placeholder{color:#4B4A52}
   .chat-input:focus{border-color:rgba(124,58,237,0.5)}
