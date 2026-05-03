@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE = "http://localhost:8000";
+const BASE = "https://eureka-production-10c4.up.railway.app";
 
 export const sendMessage = (data) => axios.post(`${BASE}/tutor/chat`, data);
 export const generateCurriculum = (data) => axios.post(`${BASE}/curriculum/generate`, data);
